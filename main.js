@@ -55,7 +55,8 @@ function InitializeApp() {
 }
 
 function openNav() {
-    document.getElementById("myNav").style.width = "80%";
+    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.height = "90%";
 }
 
 function closeNav() {
