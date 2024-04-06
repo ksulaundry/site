@@ -4,6 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+        /* Convert the list to a horizontal layout */
+        ul.hlist {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        /* Style each list item */
+        ul.hlist li {
+            margin-right: 20px; /* Add spacing between items */
+        }
+
+        /* Responsive adjustments for small screens */
+        @media screen and (max-width: 768px) {
+            ul.hlist li {
+                margin-right: 10px; /* Reduce spacing for smaller screens */
+            }
+        }
+    </style>
   <title>Campus Coin Laundry</title>
   <link rel="icon" href="laundry logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -41,9 +63,10 @@
   </div>
   
 <header>
-		<h5 id="current_date" style="text-align: end;">hello</h5>
+		<h5 id="current_date" style="text-align: end;"></h5>
 		<nav>
-			<ul>
+			<ul class="hlist">
+				<li><a href="HTML/specials.html">Special Prices</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="#contact">Contact</a></li>
