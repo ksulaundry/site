@@ -1,139 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16518200212"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'AW-16518200212');
-  </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16518200212"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'AW-16518200212');
+</script>
+	
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+        /* Convert the list to a horizontal layout */
+        ul.hlist {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        /* Style each list item */
+        ul.hlist li {
+            margin-right: 20px; /* Add spacing between items */
+        }
+
+        /* Responsive adjustments for small screens */
+        @media screen and (max-width: 768px) {
+            ul.hlist li {
+                margin-right: 10px; /* Reduce spacing for smaller screens */
+            }
+        }
+    </style>
   <title>Campus Coin Laundry</title>
   <link rel="icon" href="laundry logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      background-color: #f8f9fa;
-      padding: 10px 0;
-    }
-
-    header h5 {
-      margin: 0;
-      padding: 0;
-    }
-
-    .navbar-brand img {
-      width: 50px;
-      height: 50px;
-    }
-
-    .overlay {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.9);
-      overflow-x: hidden;
-      transition: 0.5s;
-    }
-
-    .overlay-content {
-      position: relative;
-      top: 25%;
-      width: 100%;
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .overlay a {
-      padding: 8px;
-      text-decoration: none;
-      font-size: 36px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
-
-    .overlay a:hover,
-    .overlay a:focus {
-      color: #f1f1f1;
-    }
-
-    .closebtn {
-      position: absolute;
-      top: 20px;
-      right: 45px;
-      font-size: 60px;
-    }
-
-    .container-fluid.sticky-top {
-      background: #f8f9fa;
-    }
-
-    .hlist {
-      display: flex;
-      justify-content: center;
-      padding: 0;
-      margin: 0;
-      list-style-type: none;
-    }
-
-    .hlist li {
-      margin: 0 10px;
-    }
-
-    .hlist a {
-      text-decoration: none;
-      color: #007bff;
-    }
-
-    .hlist a:hover {
-      text-decoration: underline;
-    }
-
-    .img-fluid {
-      max-width: 100%;
-      height: auto;
-    }
-
-    footer {
-      background-color: #f8f9fa;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    footer h5 {
-      margin-bottom: 20px;
-    }
-
-    footer ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    footer ul li {
-      margin-bottom: 10px;
-    }
-  </style>
 </head>
-
 <body class="container my-3">
   <div id="nav2">
     <div id="myNav" class="overlay">
@@ -146,11 +55,12 @@
         <a href="HTML/contact.html">Contact Us</a>
       </div>
     </div>
-    <div class="container-fluid border-bottom border-dark sticky-top pt-1" style="background: #f8f9fa;">
+    <div class="container-fluid border-bottom border-dark sticky-top pt-1" style="background: #EEEEEE;">
       <div class="row">
         <div class="col-9">
           <a class="navbar-brand float-md-left" href="#">
-            <img src="laundry logo.png" class="d-inline-block align-top pl-1" alt="" loading="lazy">
+            <img src="laundry logo.png" width="50" height="50"
+              class="d-inline-block align-top pl-1" alt="" loading="lazy">
             <span style="font-size: 1.75rem;"></span>&nbsp;Campus Coin Laundry
           </a>
         </div>
@@ -161,60 +71,60 @@
       </div>
     </div>
   </div>
+  
+<header>
+		<h5 id="current_date" style="text-align: end;"></h5>
+		<nav>
+			<ul class="hlist">
+				<li><a href="HTML/specials.html">Special Prices</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="HTML/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	<br>
+	</header>
+	<main>
+		<section id="about">
+			<h2 style="color: blueviolet;">About Us</h2>
+			<p>Kennesaw residents & KSU students—your new go-to laundromat is here! Opened in April 2024, we’re conveniently located at Frey Rd & George Busbee Pkwy (inside the Chevron plaza). Enjoy brand-new washers & dryers, plus flexible payments: credit cards, mobile apps, cash, and coins. Loyalty discounts available! Wash & Fold service started February 2025. Stop by and let us make laundry day easy!</p>		</section>
+	</section>
+		<img src="images/inside_main.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+		<h5 class="my-3 text-danger text-center"><span id="special1">!!! Brand New Machines. Credit Card Accepted !!!</span> </h5>
+		<br>
+		<section id="services">
+			<h2 style="color: blueviolet;">Our Services</h2>
+			<ul>
+				<li>Self Service</li>
+				<li>Accept Credit cards, Cash or Coins</li>
+				<li>Download Laundry Boss app to earn credits toward free washes and dryer time. Also, pay and start machine with app.</li>
+				<li>Attendant always available (See clerk in Chevron)</li>
+				<li>Wash & Fold</li>
+			</ul>
+			<p>With over 23 washers and 26 dryers, have all of your laundry washed and dried in approximately ONE HOUR!</p>
+		</section>
+		<section id="contact">
+			<h2 style="color: blueviolet;">Contact Us</h2>
+			<p>3930 George Busbee Pkwy Unit 103 Kennesaw, GA  30144</p>
+			<p>Hours of Operation: Mon – Fri 7:00am – 12:00am (Last Wash: 10:30pm)</p>
+			<p>Phone: (678) 383-6861</p>
+			<p>Laundry Services: <a href="mailto:ksulaundry@gmail.com">ksulaundry@gmail.com</a></p>
+		</section>
+	</main>
 
-  <header>
-    <h5 id="current_date" style="text-align: end;"></h5>
-    <nav>
-      <ul class="hlist">
-        <li><a href="HTML/specials.html">Special Prices</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="HTML/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <br>
-  </header>
 
-  <main>
-    <section id="about">
-      <h2 style="color: blueviolet;">About Us</h2>
-      <p>Kennesaw residents & KSU students—your new go-to laundromat is here! Opened in April 2024, we’re conveniently
-        located at Frey Rd & George Busbee Pkwy (inside the Chevron plaza). Enjoy brand-new washers & dryers, plus
-        flexible payments: credit cards, mobile apps, cash, and coins. Loyalty discounts available! Wash & Fold service
-        started February 2025. Stop by and let us make laundry day easy!</p>
-    </section>
-    <section>
-      <img src="images/inside_main.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
-      <h5 class="my-3 text-danger text-center"><span id="special1">!!! Brand New Machines. Credit Card Accepted !!!</span> </h5>
-    </section>
-    <section id="services">
-      <h2 style="color: blueviolet;">Our Services</h2>
-      <ul>
-        <li>Self Service</li>
-        <li>Accept Credit cards, Cash or Coins</li>
-        <li>Download Laundry Boss app to earn credits toward free washes and dryer time. Also, pay and start machine with app.</li>
-        <li>Attendant always available (See clerk in Chevron)</li>
-        <li>Wash & Fold</li>
-      </ul>
-      <p>With over 23 washers and 26 dryers, have all of your laundry washed and dried in approximately ONE HOUR!</p>
-    </section>
-    <section id="contact">
-      <h2 style="color: blueviolet;">Contact Us</h2>
-      <p>3930 George Busbee Pkwy Unit 103 Kennesaw, GA 30144</p>
-      <p>Hours of Operation: Mon – Fri 7:00am – 12:00am (Last Wash: 10:30pm)</p>
-      <p>Phone: (678) 383-6861</p>
-      <p>Laundry Services: <a href="mailto:ksulaundry@gmail.com">ksulaundry@gmail.com</a></p>
-    </section>
-  </main>
 
-  <footer>
-    <div class="container-fluid mt-5">
-      <hr style="color: blue;">
+    
+
+  <!-- </div> -->
+  <div id="footerBar" class="container-fluid mt-5">
+    <hr style="color: blue;">
+    <footer>
       <div class="row text-center">
         <div class="col-md-4 col-6 mt-1">
           <h5>Resources</h5>
           <ul class="list-unstyled text-small ml-3">
-            <li><a class="text-muted" href="HTML/hours.html">Store Hours</a></li>
+            <li><a class="text-muted" style="margin-right: 10px;" href="HTML/hours.html">Store Hours</a></li>
             <li><a class="text-muted" href="HTML/specials.html">Special Promos</a></li>
             <li><a class="text-muted" href="HTML/pic_gallery.html">Store Pictures</a></li>
           </ul>
@@ -224,4 +134,29 @@
           <ul class="list-unstyled text-small">
             <li><a class="text-muted" href="">Wash & Fold</a></li>
             <li><a class="text-muted" href="HTML/contact.html">Location</a></li>
-            <li><a class="text-muted" href="HTML/contact.html">Contact Us</a
+            <li><a class="text-muted" href="HTML/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 pt-4 col-12 mt-1">
+          <img class="mb-2" src="laundry logo.png" alt="" width="50"
+            height="50">
+          <small class="d-block mb-3 text-muted">&copy; 2024</small>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+  <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+  <script src="main.js"></script>
+<script>
+  gtag('config', 'AW-16518200212/kzo9CL-d0KQZEJT3vsQ9', {
+    'phone_conversion_number': '(678) 383-6861'
+  });
+</script>
+</body>
+
+
+</html>
